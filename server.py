@@ -3,7 +3,7 @@ import socket
 s = socket.socket()
 print("Socket created.")
 
-s.bind(('192.168.0.114',9999))
+s.bind(('https://git.heroku.com/server-socket-io-simple.git'))
 
 s.listen(4)
 print("Listening...")
@@ -15,4 +15,3 @@ while True:
 
     c.send(bytes("Hey you are connected to my server.",'utf-8'))
     c.close() 
-#numpy.array_str(numpydata)
