@@ -3,7 +3,7 @@ import socket
 s = socket.socket()
 print("Socket created.")
 
-s.bind(('https://git.heroku.com/server-socket-io-simple.git'))
+s.bind(('https://git.heroku.com/server-socket-io-simple.git',80))
 
 s.listen(4)
 print("Listening...")
